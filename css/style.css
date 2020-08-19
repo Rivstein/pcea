@@ -1,0 +1,29 @@
+.navbar{
+
+}
+.logo{
+
+}
+.logo img{
+	width: 10%;
+}
+.logo-name{
+	float: right;
+}
+.bg-section{
+	background-color: rgba(232, 232, 232, .5);
+}
+.bg-footer{
+	background-color: rgba(0, 0, 0);
+}
+.mobile-nav{
+	position: absolute;
+	z-index: 2;
+	background: rgba(255,255,255,.9);
+	width: 100%;
+	display: none;
+	transition: 0.5s;
+}
+#nav-close{
+	display: none;
+}

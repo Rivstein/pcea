@@ -1,0 +1,16 @@
+ @media screen and (max-width: 480px) {
+  .nav-items{
+  	display: none;
+  }
+  .menu-icon{
+  	display: inherit;
+  }
+}
+@media screen and (min-width: 480px) {
+  .nav-items{
+  	display: inherit;
+  }
+  .menu-icon{
+  	display: none;
+  }
+}
