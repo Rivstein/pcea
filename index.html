@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Your custom responsive -->
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div class="navbar d-flex justify-content-around bg-light">
+    <div class="media logo">
+      <img class="d-flex" src="img/logo.png" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-3 font-weight-bold">PCEA NYAHURURU</h5>
+        <h5 class="font-weight-bold">CHURCH</h5>
+      </div>
+    </div>
+    <div class="d-flex font-weight-bold ">
+      <div class="ml-3 mr-3 nav-items">Home</div>
+      <div class="ml-3 mr-3 nav-items">About Us</div>
+      <div class="ml-3 mr-3 nav-items">Rev Desk</div>
+      <div class="ml-3 mr-3 nav-items">Sermons</div>
+      <div class="ml-3 mr-3 nav-items">Ministries</div>
+      <div class="ml-3 mr-3 nav-items">Programs</div>
+      <div class="ml-3 mr-3 nav-items">Contact Us</div>
+      <div class="ml-3 mr-3 nav-items">Gallary</div>
+    </div>
+    <div class="nav-items">
+      <button type="button" class="btn btn-success">Login</button>
+    </div>
+    <div id="nav-open" class="menu-icon" onclick="toggle_nav_open()" style="font-size: 30px;">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div id="nav-close" class="menu-icon" onclick="toggle_nav_close()" style="font-size: 30px;">
+      <i class="fas fa-times"></i>
+    </div>
+  </div>
+  <!-- End of navigation -->
+  <!-- mobile nav -->
+  <div class="mobile-nav p-3" id="mobile-nav">
+    <div class="border-bottom pb-2 mb-2">
+      <button type="button" class="btn btn-success">Login</button>
+      <button type="button" class="btn btn-primary">Register</button>
+    </div>
+    <div class="mobile-nav-item mt-2 pb-2 border-bottom d-flex justify-content-between">
+      <div>
+        <i class="fas fa-home"></i>
+        <span class="font-weight-bold ml-2">Home</span>
+      </div>
+      <div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="mobile-nav-item mt-2 pb-2 border-bottom d-flex justify-content-between">
+      <div>
+        <i class="fas fa-info-circle"></i>
+        <span class="font-weight-bold ml-2">About Us</span>
+      </div>
+      <div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="mobile-nav-item mt-2 pb-2 border-bottom d-flex justify-content-between">
+      <div>
+        <i class="fas fa-desktop"></i>
+        <span class="font-weight-bold ml-2">Rev Desk</span>
+      </div>
+      <div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="mobile-nav-item mt-2 pb-2 border-bottom d-flex justify-content-between">
+      <div>
+        <i class="fas fa-volume-up"></i>
+        <span class="font-weight-bold ml-2">Summons</span>
+      </div>
+      <div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="mobile-nav-item mt-2 pb-2 border-bottom d-flex justify-content-between">
+      <div>
+        <i class="fas fa-bible"></i>
+        <span class="font-weight-bold ml-2">Ministries</span>
+      </div>
+      <div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="mobile-nav-item mt-2 pb-2 border-bottom d-flex justify-content-between">
+      <div>
+        <i class="fas fa-th-list"></i>
+        <span class="font-weight-bold ml-2">Programs</span>
+      </div>
+      <div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="mobile-nav-item mt-2 pb-2 border-bottom d-flex justify-content-between">
+      <div>
+        <i class="fas fa-mobile-alt"></i>
+        <span class="font-weight-bold ml-2">Contact Us</span>
+      </div>
+      <div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="mobile-nav-item mt-2 pb-2 border-bottom d-flex justify-content-between">
+      <div>
+        <i class="fas fa-image"></i>
+        <span class="font-weight-bold ml-2">Gallary</span>
+      </div>
+      <div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+  </div>
+  <!-- end mobile nav -->
+  <!-- carousel -->
+  <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="img/thechurch.jpg"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">PCEA CHURCH NYAHURURU</h3>
+        <p>location-</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/rev.JPG"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Rev. Name of Rev</h3>
+        <p>in service</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/youth1.JPG"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Our Youth</h3>
+        <p>In youth meeting</p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+  <!-- end carousel -->
+  <!-- about section -->
+  <div class="container-fluid pt-5 pb-5 border-bottom bg-section">
+    <div class="text-center">
+      <h2 class="font-weight-bold">Welcome to PCEA Nyahururu Church</h2>
+      <p class="mt-3 mb-3">Welcome to the Presbyterian Church of East Africa, Nyahururu Parish website. Thank you for finding time to visit us. Kindly take a moment to navigate through this website to have a little glimpse of who we are and what our mission is. Briefly, PCEA Nyahururu Parish exists, like any other Church the world over, to be a faithful representative of Jesus Christ. We believe in the apostolic succession through which we derive our identity.</p>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-4 p-1">
+        <div class="card text-center">
+          <div class="card-header font-weight-bold">
+            OUR MISSION STATEMENT
+          </div>
+          <div class="card-body">
+            To empower the community which is moulded by the word of God to be change agent, characterized by Godly lives serventhood and integrity.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-1">
+        <div class="card text-center">
+          <div class="card-header font-weight-bold">
+            OUR VISION
+          </div>
+          <div class="card-body">
+            A transformed congregation effectively responding to spiritual and physical needs of the community.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-1">
+        <div class="card">
+          <div class="card-header text-center font-weight-bold">
+            OUR CORE VALUES
+          </div>
+          <div class="card-body">
+            <div><i class="fas fa-arrow-alt-circle-right text-success"></i> I - Integrity</div>
+            <div><i class="fas fa-arrow-alt-circle-right text-success"></i> M - Meritocracy</div>
+            <div><i class="fas fa-arrow-alt-circle-right text-success"></i> A - Accuracy</div>
+            <div><i class="fas fa-arrow-alt-circle-right text-success"></i> S - Servanthood</div>
+            <div><i class="fas fa-arrow-alt-circle-right text-success"></i> T - Team work</div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <!-- end of about section -->
+  <!-- order of service -->
+  <div class="container pt-5">
+    <div class="text-center">
+      <h2 class="font-weight-bold">Order of Service</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="font-size: 30px;">
+        <div class="mt-5"><i class="fas fa-bible"></i> Intersessory Prayers 6:00am- 7:00am</div>
+        <div class="mt-5"><i class="fas fa-bible"></i> Morning Prayers 7:00am- 8:00am</div>
+        <div class="mt-5"><i class="fas fa-bible"></i> English Service 8:30am- 10:30am</div>
+        <div class="mt-5"><i class="fas fa-bible"></i> Kikuyu Service 10:30am- 12:30am</div>
+      </div>
+      <div class="col-md-6">
+        <img src="img/read.png" width="100%">
+      </div>
+    </div>
+  </div>
+  <!-- end of order of service -->
+  <!-- Summons Videos and Audios -->
+  <div class="container-fluid pt-5 bg-section">
+    <div class=" text-center mb-3">
+      <h2 class="font-weight-bold">Summons</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="text-center mb-5">
+          <h3 class="font-weight-bold">Videos</h3>
+        </div>
+        <div class="row pb-2 mb-2 border-bottom border-right">
+          <div class="col-6">
+            <video width="100%" controls>
+              <source src="videos/video123.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="col-6">
+            <div class="font-weight-bold">The Evil That is Temptation</div>
+            <div class="">By Rev.(Rev name)</div>
+            <div class="mt-4">20 Views . 4 days Ago</div>
+            <div><span class="badge badge-light">New</span></div>
+          </div>
+        </div>
+        <div class="row pb-2 mb-2 border-bottom border-right">
+          <div class="col-6">
+            <video width="100%" controls>
+              <source src="videos/video123.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="col-6">
+            <div class="font-weight-bold">The Evil That is Temptation</div>
+            <div class="">By Rev.(Rev name)</div>
+            <div class="mt-4">20 Views . 4 days Ago</div>
+            <div><span class="badge badge-light">New</span></div>
+          </div>
+        </div>
+        <div class="row pb-2 mb-2 border-bottom border-right">
+          <div class="col-6">
+            <video width="100%" controls>
+              <source src="videos/video123.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="col-6">
+            <div class="font-weight-bold">The Evil That is Temptation</div>
+            <div class="">By Rev.(Rev name)</div>
+            <div class="mt-4">20 Views . 4 days Ago</div>
+            <div><span class="badge badge-light">New</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="text-center mb-5">
+          <h3 class="font-weight-bold">Audios</h3>
+        </div>
+        <div class="border-bottom border-top pb-3 mb-3">
+          <audio controls>
+            <source src="audio/mkono.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="font-weight-bold">The Evil That is Temptation</div>
+          <div>By Rev.(Rev name)</div>
+          <div>20 Views . 4 days Ago</div>
+          <div><span class="badge badge-light">New</span></div>
+        </div>
+        <div class="border-bottom border-top pb-3 mb-3">
+          <audio controls>
+            <source src="audio/mkono.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="font-weight-bold">The Evil That is Temptation</div>
+          <div>By Rev.(Rev name)</div>
+          <div>20 Views . 4 days Ago</div>
+          <div><span class="badge badge-light">New</span></div>
+        </div>
+        <div class="border-bottom border-top pb-3 mb-3">
+          <audio controls>
+            <source src="audio/mkono.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="font-weight-bold">The Evil That is Temptation</div>
+          <div>By Rev.(Rev name)</div>
+          <div>20 Views . 4 days Ago</div>
+          <div><span class="badge badge-light">New</span></div>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <!-- end Summons Videos and Audios -->
+  <!-- blog section -->
+  
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="font-weight-bold">News</h2>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2 border-bottom">
+          <div class="col-md-6">
+            <img src="img/read.png" width="100%">
+          </div>
+          <div class="col-md-6 p-1 mt-2 ">
+            <h4>News Title will go here</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="text-success">Read More <i class="fas fa-long-arrow-alt-right"></i></div>
+            <div><span class="badge badge-light">New</span></div>
+          </div>
+        </div>
+        <div class="row mb-2 border-bottom">
+          <div class="col-md-6">
+            <img src="img/read.png" width="100%">
+          </div>
+          <div class="col-md-6 p-1 mt-2 ">
+            <h4>News Title will go here</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="text-success">Read More <i class="fas fa-long-arrow-alt-right"></i></div>
+            <div><span class="badge badge-light">New</span></div>
+          </div>
+        </div>
+        <div class="row mb-2 border-bottom">
+          <div class="col-md-6">
+            <img src="img/read.png" width="100%">
+          </div>
+          <div class="col-md-6 p-1 mt-2 ">
+            <h4>News Title will go here</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="text-success">Read More <i class="fas fa-long-arrow-alt-right"></i></div>
+            <div><span class="badge badge-light">New</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of blog section -->
+  <!-- footer -->
+  <!-- end of footer -->
+  <footer class="mt-4 text-white bg-footer">
+    <div class="row p-4">
+      <div class="col-md-4">
+        <div><h3 class="font-weight-bold">Useful Links</h3></div>
+        <div>Our Story & Background</div>
+        <div>Daily Bible Readings</div>
+        <div>Bus Bookings</div>
+        <div>Hall Bookings</div>
+      </div>
+      <div class="col-md-4">
+        <div><h3 class="font-weight-bold">Contact Details</h3></div>
+        <div>Mobile Line:</div>
+        <div>Email us at: pceanyahururu@gmail.com</div>
+      </div>
+      <div class="col-md-4">
+        <div><h3 class="font-weight-bold">GIVING & FACILITIES PAYMENT</h3></div>
+        <div>Nyahururu Church Mpesa Paybill: 4020939</div>
+        <div>Chemichemi Church Mpesa Paybill: 4020437</div>
+      </div>
+    </div>
+    <div class="text-center pb-5 mt-5">
+      &copy; 2020 Copyright: Designed By: Mneti Solutions
+    </div>
+  </footer>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
