@@ -1,11 +1,16 @@
  @media screen and (max-width: 480px) {
-  .logo-img{
-  	display: none;
+  .nav-logo{
+    padding-top: 10px;
   }
   .logo{
   	display: inherit;
   }
-  .navbar
+  .carousel{
+    margin-top: 80px;
+  }
+  .carousel-item{
+    max-height: 100%;
+  }
 }
 @media screen and (min-width: 480px) {
   .nav-items{
