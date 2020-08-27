@@ -38,3 +38,20 @@ body{
 	background-color: rgba(255,255,0,0.7);
 	color: black;
 }
+#navbar {
+  overflow: hidden;
+  z-index: 5;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 20px;
+  background-image: url(../img/bgchurch.jpg);
+}
+.carousel-item{
+	max-height: 500px;
+}
+.about-card{
+	min-height: 250px;
+}
