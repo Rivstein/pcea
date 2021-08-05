@@ -1,57 +1,72 @@
-body{
-	background-image: url(../img/bgchurch.jpg);
-	background-repeat: no-repeat;
-  	background-attachment:fixed;
-  	background-position:fixed;
-  	background-size:cover;
+/* app fonts */
+.app-font-normal{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
-.navbar{
+.app-font-medium{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.app-font-bold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
 
+/* carousel */
+.app-carousel-item{
+    position: relative;
+    background-image: url('../img/migos.jpg');
+    min-height: 150px;
+    max-height: 150px;
+    background-size: cover;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
-.logo{
-	display: none;
+.app-carousel-content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:10px 0 10px 15px;
 }
-.logo img{
-	width: 10%;
+.app-carousel-play-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 70px; 
 }
-.logo-name{
-	float: right;
+.carousel-play-btn{
+    height: 40px;
+    width: 40px;
+    padding: 9px 10px 0 14px;
+    color: #fff;
+    background: #645b7a;
+    border-radius: 50%;
+    margin-right: 20px;
 }
-.bg-section{
-	background-color: rgba(232, 232, 232, .5);
+.app-carousel-dot-active{
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    background: green;
 }
-.bg-footer{
-	background-color: rgba(0, 0, 0);
+.app-carousel-dot{
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    background: #b9b9b9;
 }
-.mobile-nav{
-	position: absolute;
-	z-index: 2;
-	background: rgba(255,255,255,.9);
-	width: 100%;
-	display: none;
-	transition: 0.5s;
+.trending-music{
+    max-width: 100%;
+    display: flex;
+    overflow-x: scroll;
 }
-#nav-close{
-	display: none;
+.trending-music-item{
+    max-width: 70%;
+    min-width: 70%;
 }
-.nav-item:hover{
-	background-color: rgba(255,255,0,0.7);
-	color: black;
-}
-#navbar {
-  overflow: hidden;
-  z-index: 5;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-top: 20px;
-  background-image: url(../img/bgchurch.jpg);
-}
-.carousel-item{
-	max-height: 500px;
-}
-.about-card{
-	min-height: 250px;
+.song-list{
+    
 }
