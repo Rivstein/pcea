@@ -67,6 +67,33 @@
     max-width: 70%;
     min-width: 70%;
 }
-.song-list{
-    
+.top-artists{
+    max-width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+.top-artists-item{
+    max-width: 40%;
+    min-width: 40%;
+}
+.top-artists-item img{
+    border-radius: 10px;
+}
+.upcoming-events{
+    max-width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+.upcoming-events-item{
+    max-width: 90%;
+    min-width: 90%;
+}
+.trending-news{
+    max-width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+.trending-news-item{
+    max-width: 80%;
+    min-width: 80%;
 }
