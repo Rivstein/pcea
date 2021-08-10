@@ -97,3 +97,10 @@
     max-width: 80%;
     min-width: 80%;
 }
+.app-album-item{
+    max-width: 40%;
+    min-width: 40%;
+}
+.app-album-item img{
+    border-radius: 5px;
+}
